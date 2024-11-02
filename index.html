@@ -19,14 +19,14 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                    }
-                }
-            }
+                    },fontFamily: { manrope: ['Manrope', 'sans-serif']}
+                } ,
+            },
         }
     </script>
 </head>
 
-<body>
+<body class="font-manrope">
     <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
         <!-- header section -->
         <header class="lg:flex pt-10 mb-20">
@@ -252,16 +252,68 @@
         </section>
     </main>
     <!-- Footer section -->
-    <footer class="md:mt-8 w-full bg-gradient-to-r from-[#FF8938] to-[#FF0000]">
-        <div class="lg:px-40 lg:py-24 ">
-            <div class="flex justify-between">
-                <div><img src="images/cup.png" alt=""></div>
-                <div class="flex">
-                    <p class="inline">Ready to get strated?</p>
+    <footer class="md:mt-8 w-full text-[#494949] bg-gradient-to-r from-red-50 to-red-100 px-4 md:px-16 py-10 ">
+        <div class="w-3/4 mx-auto">
+            <!-- logo -->
+            <div class="mb-8 flex justify-between">
+                <img src="images/cup.png" alt="">
+                <div class="flex items-center gap-3">
+                    <p class="text-xl font-medium">Ready to get started?</p>
                     <button
-                        class="font-bold text-white bg-gradient-to-r from-[#FF8938] to-[#FF0000] px-5 py-4 rounded-lg ">Get
+                        class="font-bold text-white bg-gradient-to-r from-[#FF8938] to-[#FF0000] px-4 py-3 rounded-md ">Get
                         Started</button>
                 </div>
+            </div>
+            <!-- Links -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Column -1 -->
+                <div>
+                    <h4 class="mb-5 text-xl font-semibold text-black">Quick Links</h4>
+                    <ul class="space-y-5">
+                        <li><a class="hover:text-orange-500" href="#">Home</a></li>
+                        <li><a class="hover:text-orange-500" href="#">About Us</a></li>
+                        <li><a class="hover:text-orange-500" href="#">Insurance</a></li>
+                        <li><a class="hover:text-orange-500" href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <!-- Column -2 -->
+                <div>
+                    <h4 class="mb-5 text-xl font-semibold text-black">Our Service</h4>
+                    <ul class="space-y-5">
+                        <li><a class="hover:text-orange-500" href="#">Life Insurance</a></li>
+                        <li><a class="hover:text-orange-500" href="#">Car Insurance</a></li>
+                        <li><a class="hover:text-orange-500" href="#">Health Insurance</a></li>
+                        <li><a class="hover:text-orange-500" href="#">House Insurance</a></li>
+                    </ul>
+                </div>
+                <!-- Column -3 -->
+                <div>
+                    <h4 class="mb-5 text-xl font-semibold text-black">Help</h4>
+                    <ul class="space-y-5">
+                        <li><a class="hover:text-orange-500" href="#">FAQs</a></li>
+                        <li><a class="hover:text-orange-500" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Column -4 -->
+                <div>
+                    <h4 class="mb-5 text-2xl font-semibold text-black">Subscribe to our newsletter</h4>
+                    <div class="flex flex-col space-y-2">
+                        <div>
+                            <input class="
+                            bg-transparent border-b-2 border-black  w-4/6" placeholder="Email Address" type="text">
+                            <i
+                                class="fa-solid fa-chevron-right rounded-full bg-gradient-to-r from-[#FF8938] to-[#FF0000] w-7 h-7 text-white inline-flex justify-center items-center"></i>
+                            <div class="flex justify-between w-2/5 mb-2 mt-12">
+                                <i class="fa-brands fa-facebook fa-lg"></i>
+                                <i class="fa-brands fa-square-twitter fa-lg"></i>
+                                <i class="fa-brands fa-square-instagram fa-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8 pt-8">
+                <p class="text-sm text-gray-500 mb-5 ">© 2027 UIDesign.to - All rights reserved.</p>
             </div>
         </div>
     </footer>
